@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#git add dist -f && git commit -m "Deployment commit"
 
 
 git checkout gh-pages  && git merge main --no-edit 
