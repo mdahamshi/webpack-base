@@ -8,8 +8,9 @@
     "url": "git+https://github.com/mdahamshi/webpack-base.git"
   },
   "scripts": {
+    "format": "npx prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.prod.js",
+    "build": "npm run format && webpack --config webpack.prod.js",
     "dev": "webpack serve --open --config webpack.dev.js",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
