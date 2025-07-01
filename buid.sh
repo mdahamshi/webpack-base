@@ -1,13 +1,20 @@
 #!/bin/bash
+npm install
 
-#git add dist -f && git commit -m "Deployment commit"
+if git show-ref --verify --quiet refs/heads/gh-pages; then
+  git checkout gh-pages || exit 1
+else
+  git checkout -b gh-pages || exit 1
+fi
 
 
-git checkout gh-pages  && git merge main --no-edit 
+git merge main --no-edit || exit 1
 
-npm run build
+npm run build  || exit 1
 
-git add dist -f
+git add dist -f && git commit -m "Deployment commit" || exit 1
+
+git add dist -f  
 
 git commit -m 'Deployment commit'
 
