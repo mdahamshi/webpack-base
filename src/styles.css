@@ -25,3 +25,52 @@
   --sb-padding: 16px;
   --sb-border-color-thin: #f0f1f4;
 }
+body {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+  padding: 8px;
+}
+.flex-row {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+button:focus-visible,
+button:focus {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+button.sb-button {
+  border-radius: var(--sb-corner-radius);
+  color: white;
+  background-color: var(--sb-theme-color);
+  padding: 10px;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+}
+button:active,
+.clickable:active,
+.clickable {
+  filter: brightness(0.9);
+  transform: scale(0.98);
+}
