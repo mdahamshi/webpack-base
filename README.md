@@ -71,6 +71,7 @@ webpack-base/
 * [Prettier](https://prettier.io/)
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 * [GitHub Pages](https://pages.github.com/)
+* [SaraWebs Utils](https://www.npmjs.com/package/@sarawebs/sb-utils)
 
 ---
 
