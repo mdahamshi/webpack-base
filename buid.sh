@@ -12,7 +12,7 @@ git merge main --no-edit || exit 1
 
 npm run build  || exit 1
 
-git add dist -f && git commit -m "Deployment commit" || exit 1
+git add dist -f && git commit -m "Deployment commit" 
 
 git add dist -f  
 
